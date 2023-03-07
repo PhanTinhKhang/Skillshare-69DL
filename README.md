@@ -8,6 +8,6 @@ Working method to download skillshare courses (Updated 2023)
 
 ## Usage:
 
-<a href="https://colab.research.google.com/github/calvinhobbes23/Skillshare-DL/blob/master/Skillshare_DL_%5BKENWAY%5D.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+<a href="https://colab.research.google.com/github/PhanTinhKhang/Skillshare-69DL/blob/main/skillshare_downloader_ptk69.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 <hr>
