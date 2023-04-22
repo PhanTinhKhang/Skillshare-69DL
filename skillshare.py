@@ -144,10 +144,13 @@ class Skillshare(object):
         if meta_res.status_code != 200:
             raise Exception('Failed to fetch video meta')
 
-        if meta_res.json()['sources'][6]['container'] == 'MP4' and 'src' in meta_res.json()['sources'][6]:
-            dl_url = meta_res.json()['sources'][6]['src']
-            # break
-        else:
+        try:
+            if meta_res.json()['sources'][6]['container'] == 'MP4' and 'src' in meta_res.json()['sources'][6]:
+                dl_url = meta_res.json()['sources'][6]['src']
+                # break
+            else:
+                dl_url = meta_res.json()['sources'][1]['src']
+        except IndexError:
             dl_url = meta_res.json()['sources'][1]['src']
 
         print('Downloading {}...'.format(fpath))
